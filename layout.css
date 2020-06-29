@@ -1,0 +1,43 @@
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-1, .col-3, .col-4, .col-6, .col-12{
+    padding: 10px;
+}
+.col-1 {
+    width: calc(100%/12);
+}
+.col-3 {
+    width: 25%;
+}
+.col-4 {
+    width: 33.333%;
+}
+.col-6 {
+    width: 50%;
+}
+
+.mb-40{
+    margin-bottom: 40px;
+}
+
+.mb-65{
+    margin-bottom: 65px;
+}
+
+.mt-60{
+    margin-top: 60px;
+}
+
+.pt-section{  
+    padding: 120px 0
+}

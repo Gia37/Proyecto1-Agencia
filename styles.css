@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Nav */
+
+#navbar{
+    background-color: white;
+} 
+
+/*Menú desplegable*/
+.sub-menu 
+{ 
+   display: none; /* Ocultar el menú predeterminado*/
+   margin-top: 20px;
+} 
+
+.sub-menu li a{   /* Dar estilos a los elementos de menú desplegables.*/
+  position: relative;
+  display: block;
+  z-index: 10000;
+} 
+/*Una parte importante del código. Al hacer clic en el menú así como en el elemento de menú activo, cambiamos display: none a block lo que nos permite ver nuestro menú*/
+.main-item:focus ~ .sub-menu, 
+.main-item:active ~ .sub-menu, 
+.sub-menu:hover 
+{ 
+   display: block; 
+} 
+/* Final del menú desplegable*/
+.horizontal.primary-menu > ul > li > a {
+    padding-left: 5px;
+    padding-right: 25px;
+}
+
+.horizontal.primary-menu ul li > a, .horizontal.primary-menu ul li a {
+    border-left: 5px solid transparent;
+}
+
+.horizontal.primary-menu > ul > li > a:not(:only-child)::after {
+    right: 2px;
+    top: 8px;
+}
+
+nav.primary-menu li a i {
+    font-size: 16px;
+    padding-right: 5px;
+}
+
+nav.primary-menu ul{ /*quita los puntos de la lista */
+    list-style: none;
+}
+
+nav.primary-menu li a {
+    display: block;
+    letter-spacing: 2.1px;
+    padding: 6px 0 6px 10px;
+    position: relative;
+    color: #111;
+    text-decoration: none;
+    line-height: 1;
+}
+
+nav.primary-menu a:not(:only-child):after {
+    content: "\e64b";
+    font-family: 'themify';
+    position: absolute;
+    right: 10px;
+    top: 7px;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+.collapse:not(.show) {
+    display: none;
+}
+
+.navb li{
+    display: inline-block;
+}
+#navbar{
+    z-index: 200;
+}
+
+.w-100{
+    width: 100%!important;
+}
+
+.container-flu {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.px-180{
+    padding-left: 180px;
+    padding-right: 180px;
+}
+
+.navbar{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem 1rem;
+}
+
+.px-0{
+    padding-left: 0!important;
+    padding-right: 0!important;
+}
+
+.navbar-brand{
+    display: inline-block;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+
+/* Intro section */
+#intro {
+    min-height: 100vh;
+}
+.intro-title {
+    font-size: 60px;
+}
+.intro-subtitle {
+    font-size: 20px;
+}
+
+/* Servicios */
+#services {
+    margin-top: -100px;
+}
+
+.text-center{
+    text-align: center!important;
+}
+
+.d-block{
+    display: block;
+}
+
+.list-inline-block{
+    display: inline-block;
+}
+
+.menu-work .list-inline-block{
+    padding: 0 5px;
+    position: relative;
+    color: #282828;
+    font-size: 12px;
+    letter-spacing: 3px
+}
+
+.btns{
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    border: 1px solid transparent;
+}
+.btn-default{
+    padding: 1px 45px 0 45px;
+    line-height: 50px;
+    font-size: 14px;
+    letter-spacing: 3.5px;
+    border-radius: 0;
+}
+
+.btn-outline-dark{
+    color: #111111;
+    border-color: #111111;
+}
+
+.d-inline{
+    display: inline;
+}
+
+/* END SERVICES */
+
+/* WORK */
+#img-portfolio{
+    position: relative;
+    height: 1727.06px;
+}
+
+.work-img-1{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.work-img-2{
+    position: absolute;
+    left: 255px;
+    top: 0px;
+}
+
+.work-img-3{
+    position: absolute;
+    left: 0px;
+    top: 186.25px;
+}
+
+.work-img-4{
+    position: absolute;
+    left: 255px;
+    top: 355px;
+}
+
+.work-img-5{
+    position: absolute;
+    left: 0px;
+    top: 441.25px;
+}
+
+.work-img-6{
+    position: absolute;
+    left: 0px;
+    top: 696.25px;
+}
+
+/* END WORK */
+
+/* Footer */
+
+.bg-color{
+    background-color: #1d1d1d !important;
+}
+
+.ptb-15{
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.ml-auto{
+    margin-left: auto!important;
+}
+
+.copyright p, .copyright a{
+    color: #ababab;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.social-links a{
+    padding: 0 10px;
+    color: #ababab;
+    font-weight: 300;
+    font-size: 14px;
+}
